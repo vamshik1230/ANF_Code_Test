@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ANFTableViewCellIdentifer" rowHeight="391" id="uZA-o2-2ml" userLabel="ANFTableViewCell" customClass="ANFTableViewCell" customModule="ANF_Code_Test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="482" height="391"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uZA-o2-2ml" id="lB5-4I-PrH">
+                <rect key="frame" x="0.0" y="0.0" width="482" height="391"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="anf-20160527-app-m-shirts" translatesAutoresizingMaskIntoConstraints="NO" id="fse-bx-Ud4">
+                        <rect key="frame" x="0.0" y="0.0" width="482" height="159"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="159" placeholder="YES" id="h8v-my-Mhc"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="KbO-0I-cfo" userLabel="Labels Stack View">
+                        <rect key="frame" x="30" y="179" width="422" height="73"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="54I-9R-J9Z">
+                                <rect key="frame" x="166" y="0.0" width="90" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="QzN-3F-Tyg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IjY-Ts-YlF">
+                                <rect key="frame" x="193.5" y="23" width="35" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="gaX-C6-rfa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Promo message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEt-cA-IZQ">
+                                <rect key="frame" x="171" y="49" width="80.5" height="13"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Bottom description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8i-o1-Yzj">
+                                <rect key="frame" x="164" y="66" width="94.5" height="7"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="DSh-dQ-zyo">
+                        <rect key="frame" x="40" y="272" width="402" height="94"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYO-kW-XXV">
+                                <rect key="frame" x="0.0" y="0.0" width="402" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="rjW-AR-0jH"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Shop for men">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="15"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="shopMenAction:" destination="uZA-o2-2ml" eventType="touchUpInside" id="9uU-Yh-IyJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgm-S6-GoG">
+                                <rect key="frame" x="0.0" y="49" width="402" height="45"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Shop for women">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="15"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="shopWomenAction:" destination="uZA-o2-2ml" eventType="touchUpInside" id="mEw-ES-8Eh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="eYO-kW-XXV" firstAttribute="height" secondItem="hgm-S6-GoG" secondAttribute="height" id="hJr-Hn-SjS"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="fse-bx-Ud4" secondAttribute="trailing" id="FGt-kA-NgV"/>
+                    <constraint firstItem="fse-bx-Ud4" firstAttribute="top" secondItem="lB5-4I-PrH" secondAttribute="top" id="FV2-Mr-Kaw"/>
+                    <constraint firstItem="DSh-dQ-zyo" firstAttribute="top" secondItem="KbO-0I-cfo" secondAttribute="bottom" constant="20" id="HVW-dF-29u"/>
+                    <constraint firstItem="KbO-0I-cfo" firstAttribute="top" secondItem="fse-bx-Ud4" secondAttribute="bottom" constant="20" id="chM-q4-G0Z"/>
+                    <constraint firstItem="fse-bx-Ud4" firstAttribute="leading" secondItem="lB5-4I-PrH" secondAttribute="leading" id="dJb-AO-7u5"/>
+                    <constraint firstAttribute="bottom" secondItem="DSh-dQ-zyo" secondAttribute="bottom" constant="25" id="peK-bi-Vfu"/>
+                    <constraint firstItem="DSh-dQ-zyo" firstAttribute="leading" secondItem="lB5-4I-PrH" secondAttribute="leading" constant="40" id="qVA-gb-SVl"/>
+                    <constraint firstAttribute="trailing" secondItem="KbO-0I-cfo" secondAttribute="trailing" constant="30" id="rXO-fv-Vjr"/>
+                    <constraint firstItem="KbO-0I-cfo" firstAttribute="leading" secondItem="lB5-4I-PrH" secondAttribute="leading" constant="30" id="xyM-3z-swn"/>
+                    <constraint firstAttribute="trailing" secondItem="DSh-dQ-zyo" secondAttribute="trailing" constant="40" id="yce-mc-5R5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="eMv-cI-icM"/>
+            <connections>
+                <outlet property="backgroundImageView" destination="fse-bx-Ud4" id="3gW-Z4-gQ8"/>
+                <outlet property="bottomDescriptionLabel" destination="t8i-o1-Yzj" id="gSe-4K-hKb"/>
+                <outlet property="firstButton" destination="eYO-kW-XXV" id="XIc-5m-u6f"/>
+                <outlet property="promoMessageLabel" destination="OEt-cA-IZQ" id="eo1-fk-NTC"/>
+                <outlet property="secondButton" destination="hgm-S6-GoG" id="A2c-nR-Kmx"/>
+                <outlet property="titleLabel" destination="IjY-Ts-YlF" id="eJa-YN-ZWS"/>
+                <outlet property="topDescriptionLabel" destination="54I-9R-J9Z" id="Bpa-at-QAh"/>
+                <outlet property="topLabelStackView" destination="KbO-0I-cfo" id="P00-Ys-Srw"/>
+            </connections>
+            <point key="canvasLocation" x="191.30434782608697" y="80.691964285714278"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="anf-20160527-app-m-shirts" width="1000" height="559"/>
+    </resources>
+</document>
