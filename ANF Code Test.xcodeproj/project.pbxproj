@@ -1,0 +1,655 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E4AB93A2676D86100C79456 /* exploreData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E4AB9392676D86100C79456 /* exploreData.json */; };
+		3E727ED326727088006C11AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E727ED226727088006C11AC /* AppDelegate.swift */; };
+		3E727ED526727088006C11AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E727ED426727088006C11AC /* SceneDelegate.swift */; };
+		3E727EDA26727088006C11AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E727ED826727088006C11AC /* Main.storyboard */; };
+		3E727EDC2672708B006C11AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E727EDB2672708B006C11AC /* Assets.xcassets */; };
+		3E727EDF2672708B006C11AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E727EDD2672708B006C11AC /* LaunchScreen.storyboard */; };
+		3E727EEA2672708B006C11AC /* ANFExploreCardTableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E727EE92672708B006C11AC /* ANFExploreCardTableViewControllerTests.swift */; };
+		3E727F03267281F7006C11AC /* ANFExploreCardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E727F02267281F7006C11AC /* ANFExploreCardTableViewController.swift */; };
+		ABB243B428B79FFC00FC423B /* ANFDataServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB243B328B79FFC00FC423B /* ANFDataServiceManager.swift */; };
+		ABB243B828B7A30A00FC423B /* ANFTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB243B628B7A30A00FC423B /* ANFTableViewCell.swift */; };
+		ABB243B928B7A30A00FC423B /* ANFTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABB243B728B7A30A00FC423B /* ANFTableViewCell.xib */; };
+		ABB243BB28B7DD3700FC423B /* ANFViewController+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB243BA28B7DD3700FC423B /* ANFViewController+Protocol.swift */; };
+		ABB243BD28B7DD5400FC423B /* ANFViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB243BC28B7DD5400FC423B /* ANFViewController+Extensions.swift */; };
+		ABB243BF28B7E2AC00FC423B /* ANFViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB243BE28B7E2AC00FC423B /* ANFViewPresenter.swift */; };
+		ABB243C128B7E3A800FC423B /* ANFViewCardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB243C028B7E3A800FC423B /* ANFViewCardList.swift */; };
+		ABB243C328B7E5E600FC423B /* ANFModelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB243C228B7E5E600FC423B /* ANFModelResponse.swift */; };
+		ABB243C528B7E8D700FC423B /* ANFViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB243C428B7E8D700FC423B /* ANFViewModel.swift */; };
+		ABB243C728B7E8ED00FC423B /* ANFViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB243C628B7E8ED00FC423B /* ANFViewModelProtocol.swift */; };
+		ABB243C928B7EC6400FC423B /* NetworkErrorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB243C828B7EC6400FC423B /* NetworkErrorConstants.swift */; };
+		ABB243CB28B7EC8300FC423B /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB243CA28B7EC8300FC423B /* URLRequestBuilder.swift */; };
+		ABB243CD28B7F5E400FC423B /* ANFNetworkSertvice.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB243CC28B7F5E400FC423B /* ANFNetworkSertvice.swift */; };
+		ABB243CF28B7FC7E00FC423B /* ANFDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB243CE28B7FC7E00FC423B /* ANFDataService.swift */; };
+		ABB243D328B8A6D700FC423B /* ANFViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB243D228B8A6D700FC423B /* ANFViewModelTests.swift */; };
+		ABB243D628B8EEF200FC423B /* MockDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB243D528B8EEF200FC423B /* MockDataManager.swift */; };
+		ABB243D828B8EF0700FC423B /* MockDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB243D728B8EF0700FC423B /* MockDataService.swift */; };
+		ABB243DA28B8EF9600FC423B /* MockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB243D928B8EF9600FC423B /* MockViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3E727EE62672708B006C11AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E727EC726727088006C11AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E727ECE26727088006C11AC;
+			remoteInfo = "ANF Code Test";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3E4AB9392676D86100C79456 /* exploreData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = exploreData.json; sourceTree = "<group>"; };
+		3E727ECF26727088006C11AC /* ANF Code Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ANF Code Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E727ED226727088006C11AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3E727ED426727088006C11AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3E727ED926727088006C11AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3E727EDB2672708B006C11AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3E727EDE2672708B006C11AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3E727EE02672708B006C11AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E727EE52672708B006C11AC /* ANF Code TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ANF Code TestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E727EE92672708B006C11AC /* ANFExploreCardTableViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANFExploreCardTableViewControllerTests.swift; sourceTree = "<group>"; };
+		3E727EEB2672708B006C11AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E727F02267281F7006C11AC /* ANFExploreCardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANFExploreCardTableViewController.swift; sourceTree = "<group>"; };
+		ABB243B328B79FFC00FC423B /* ANFDataServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANFDataServiceManager.swift; sourceTree = "<group>"; };
+		ABB243B628B7A30A00FC423B /* ANFTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANFTableViewCell.swift; sourceTree = "<group>"; };
+		ABB243B728B7A30A00FC423B /* ANFTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ANFTableViewCell.xib; sourceTree = "<group>"; };
+		ABB243BA28B7DD3700FC423B /* ANFViewController+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ANFViewController+Protocol.swift"; sourceTree = "<group>"; };
+		ABB243BC28B7DD5400FC423B /* ANFViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ANFViewController+Extensions.swift"; sourceTree = "<group>"; };
+		ABB243BE28B7E2AC00FC423B /* ANFViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANFViewPresenter.swift; sourceTree = "<group>"; };
+		ABB243C028B7E3A800FC423B /* ANFViewCardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANFViewCardList.swift; sourceTree = "<group>"; };
+		ABB243C228B7E5E600FC423B /* ANFModelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANFModelResponse.swift; sourceTree = "<group>"; };
+		ABB243C428B7E8D700FC423B /* ANFViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANFViewModel.swift; sourceTree = "<group>"; };
+		ABB243C628B7E8ED00FC423B /* ANFViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANFViewModelProtocol.swift; sourceTree = "<group>"; };
+		ABB243C828B7EC6400FC423B /* NetworkErrorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorConstants.swift; sourceTree = "<group>"; };
+		ABB243CA28B7EC8300FC423B /* URLRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestBuilder.swift; sourceTree = "<group>"; };
+		ABB243CC28B7F5E400FC423B /* ANFNetworkSertvice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANFNetworkSertvice.swift; sourceTree = "<group>"; };
+		ABB243CE28B7FC7E00FC423B /* ANFDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANFDataService.swift; sourceTree = "<group>"; };
+		ABB243D228B8A6D700FC423B /* ANFViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANFViewModelTests.swift; sourceTree = "<group>"; };
+		ABB243D528B8EEF200FC423B /* MockDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataManager.swift; sourceTree = "<group>"; };
+		ABB243D728B8EF0700FC423B /* MockDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataService.swift; sourceTree = "<group>"; };
+		ABB243D928B8EF9600FC423B /* MockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E727ECC26727088006C11AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E727EE22672708B006C11AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E727EC626727088006C11AC = {
+			isa = PBXGroup;
+			children = (
+				3E727ED126727088006C11AC /* ANF Code Test */,
+				3E727EE82672708B006C11AC /* ANF Code TestTests */,
+				3E727ED026727088006C11AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3E727ED026727088006C11AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E727ECF26727088006C11AC /* ANF Code Test.app */,
+				3E727EE52672708B006C11AC /* ANF Code TestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E727ED126727088006C11AC /* ANF Code Test */ = {
+			isa = PBXGroup;
+			children = (
+				ABB243AE28B79DE900FC423B /* Core */,
+				ABB243AD28B79DDE00FC423B /* Presenter */,
+				ABB243AC28B79C0B00FC423B /* Model */,
+				ABB243AB28B79B9C00FC423B /* ViewModel */,
+				ABB243AA28B79B8600FC423B /* View */,
+				ABB243A928B79B3F00FC423B /* ViewController */,
+				3E727ED226727088006C11AC /* AppDelegate.swift */,
+				3E727ED426727088006C11AC /* SceneDelegate.swift */,
+				3E727ED826727088006C11AC /* Main.storyboard */,
+				3E727EDB2672708B006C11AC /* Assets.xcassets */,
+				3E727EDD2672708B006C11AC /* LaunchScreen.storyboard */,
+				3E727EE02672708B006C11AC /* Info.plist */,
+				3E4AB9392676D86100C79456 /* exploreData.json */,
+			);
+			path = "ANF Code Test";
+			sourceTree = "<group>";
+		};
+		3E727EE82672708B006C11AC /* ANF Code TestTests */ = {
+			isa = PBXGroup;
+			children = (
+				ABB243D428B8DBD000FC423B /* Mocks */,
+				3E727EE92672708B006C11AC /* ANFExploreCardTableViewControllerTests.swift */,
+				3E727EEB2672708B006C11AC /* Info.plist */,
+				ABB243D228B8A6D700FC423B /* ANFViewModelTests.swift */,
+			);
+			path = "ANF Code TestTests";
+			sourceTree = "<group>";
+		};
+		ABB243A928B79B3F00FC423B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3E727F02267281F7006C11AC /* ANFExploreCardTableViewController.swift */,
+				ABB243BA28B7DD3700FC423B /* ANFViewController+Protocol.swift */,
+				ABB243BC28B7DD5400FC423B /* ANFViewController+Extensions.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		ABB243AA28B79B8600FC423B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ABB243B528B7A2A300FC423B /* TableViewCells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ABB243AB28B79B9C00FC423B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ABB243C428B7E8D700FC423B /* ANFViewModel.swift */,
+				ABB243C628B7E8ED00FC423B /* ANFViewModelProtocol.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ABB243AC28B79C0B00FC423B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ABB243D128B7FD0600FC423B /* NetworkLayer */,
+				ABB243D028B7FC9600FC423B /* DataLayer */,
+				ABB243C028B7E3A800FC423B /* ANFViewCardList.swift */,
+				ABB243C228B7E5E600FC423B /* ANFModelResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ABB243AD28B79DDE00FC423B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				ABB243BE28B7E2AC00FC423B /* ANFViewPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		ABB243AE28B79DE900FC423B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				ABB243B028B79E6900FC423B /* DataManager */,
+				ABB243AF28B79DFB00FC423B /* Networking */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		ABB243AF28B79DFB00FC423B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				ABB243C828B7EC6400FC423B /* NetworkErrorConstants.swift */,
+				ABB243CA28B7EC8300FC423B /* URLRequestBuilder.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		ABB243B028B79E6900FC423B /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				ABB243B328B79FFC00FC423B /* ANFDataServiceManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		ABB243B528B7A2A300FC423B /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				ABB243B628B7A30A00FC423B /* ANFTableViewCell.swift */,
+				ABB243B728B7A30A00FC423B /* ANFTableViewCell.xib */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		ABB243D028B7FC9600FC423B /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				ABB243CE28B7FC7E00FC423B /* ANFDataService.swift */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		ABB243D128B7FD0600FC423B /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				ABB243CC28B7F5E400FC423B /* ANFNetworkSertvice.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		ABB243D428B8DBD000FC423B /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				ABB243D528B8EEF200FC423B /* MockDataManager.swift */,
+				ABB243D728B8EF0700FC423B /* MockDataService.swift */,
+				ABB243D928B8EF9600FC423B /* MockViewModel.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3E727ECE26727088006C11AC /* ANF Code Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E727EF92672708B006C11AC /* Build configuration list for PBXNativeTarget "ANF Code Test" */;
+			buildPhases = (
+				3E727ECB26727088006C11AC /* Sources */,
+				3E727ECC26727088006C11AC /* Frameworks */,
+				3E727ECD26727088006C11AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ANF Code Test";
+			productName = "ANF Code Test";
+			productReference = 3E727ECF26727088006C11AC /* ANF Code Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3E727EE42672708B006C11AC /* ANF Code TestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E727EFC2672708B006C11AC /* Build configuration list for PBXNativeTarget "ANF Code TestTests" */;
+			buildPhases = (
+				3E727EE12672708B006C11AC /* Sources */,
+				3E727EE22672708B006C11AC /* Frameworks */,
+				3E727EE32672708B006C11AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E727EE72672708B006C11AC /* PBXTargetDependency */,
+			);
+			name = "ANF Code TestTests";
+			productName = "ANF Code TestTests";
+			productReference = 3E727EE52672708B006C11AC /* ANF Code TestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3E727EC726727088006C11AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					3E727ECE26727088006C11AC = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					3E727EE42672708B006C11AC = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 3E727ECE26727088006C11AC;
+					};
+				};
+			};
+			buildConfigurationList = 3E727ECA26727088006C11AC /* Build configuration list for PBXProject "ANF Code Test" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3E727EC626727088006C11AC;
+			productRefGroup = 3E727ED026727088006C11AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E727ECE26727088006C11AC /* ANF Code Test */,
+				3E727EE42672708B006C11AC /* ANF Code TestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E727ECD26727088006C11AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E727EDF2672708B006C11AC /* LaunchScreen.storyboard in Resources */,
+				ABB243B928B7A30A00FC423B /* ANFTableViewCell.xib in Resources */,
+				3E727EDC2672708B006C11AC /* Assets.xcassets in Resources */,
+				3E727EDA26727088006C11AC /* Main.storyboard in Resources */,
+				3E4AB93A2676D86100C79456 /* exploreData.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E727EE32672708B006C11AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E727ECB26727088006C11AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABB243C328B7E5E600FC423B /* ANFModelResponse.swift in Sources */,
+				3E727F03267281F7006C11AC /* ANFExploreCardTableViewController.swift in Sources */,
+				ABB243BF28B7E2AC00FC423B /* ANFViewPresenter.swift in Sources */,
+				ABB243B428B79FFC00FC423B /* ANFDataServiceManager.swift in Sources */,
+				ABB243C728B7E8ED00FC423B /* ANFViewModelProtocol.swift in Sources */,
+				ABB243BB28B7DD3700FC423B /* ANFViewController+Protocol.swift in Sources */,
+				ABB243CD28B7F5E400FC423B /* ANFNetworkSertvice.swift in Sources */,
+				ABB243BD28B7DD5400FC423B /* ANFViewController+Extensions.swift in Sources */,
+				ABB243CB28B7EC8300FC423B /* URLRequestBuilder.swift in Sources */,
+				ABB243C528B7E8D700FC423B /* ANFViewModel.swift in Sources */,
+				ABB243C128B7E3A800FC423B /* ANFViewCardList.swift in Sources */,
+				3E727ED326727088006C11AC /* AppDelegate.swift in Sources */,
+				3E727ED526727088006C11AC /* SceneDelegate.swift in Sources */,
+				ABB243B828B7A30A00FC423B /* ANFTableViewCell.swift in Sources */,
+				ABB243C928B7EC6400FC423B /* NetworkErrorConstants.swift in Sources */,
+				ABB243CF28B7FC7E00FC423B /* ANFDataService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E727EE12672708B006C11AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABB243DA28B8EF9600FC423B /* MockViewModel.swift in Sources */,
+				ABB243D328B8A6D700FC423B /* ANFViewModelTests.swift in Sources */,
+				ABB243D828B8EF0700FC423B /* MockDataService.swift in Sources */,
+				ABB243D628B8EEF200FC423B /* MockDataManager.swift in Sources */,
+				3E727EEA2672708B006C11AC /* ANFExploreCardTableViewControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3E727EE72672708B006C11AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E727ECE26727088006C11AC /* ANF Code Test */;
+			targetProxy = 3E727EE62672708B006C11AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3E727ED826727088006C11AC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E727ED926727088006C11AC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3E727EDD2672708B006C11AC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E727EDE2672708B006C11AC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3E727EF72672708B006C11AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3E727EF82672708B006C11AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3E727EFA2672708B006C11AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RAHE33U4ZS;
+				INFOPLIST_FILE = "ANF Code Test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abercrombie.ANF-Code-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3E727EFB2672708B006C11AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RAHE33U4ZS;
+				INFOPLIST_FILE = "ANF Code Test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abercrombie.ANF-Code-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		3E727EFD2672708B006C11AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "ANF Code TestTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abercrombie.ANF-Code-TestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ANF Code Test.app/ANF Code Test";
+			};
+			name = Debug;
+		};
+		3E727EFE2672708B006C11AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "ANF Code TestTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abercrombie.ANF-Code-TestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ANF Code Test.app/ANF Code Test";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E727ECA26727088006C11AC /* Build configuration list for PBXProject "ANF Code Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E727EF72672708B006C11AC /* Debug */,
+				3E727EF82672708B006C11AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E727EF92672708B006C11AC /* Build configuration list for PBXNativeTarget "ANF Code Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E727EFA2672708B006C11AC /* Debug */,
+				3E727EFB2672708B006C11AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E727EFC2672708B006C11AC /* Build configuration list for PBXNativeTarget "ANF Code TestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E727EFD2672708B006C11AC /* Debug */,
+				3E727EFE2672708B006C11AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3E727EC726727088006C11AC /* Project object */;
+}
